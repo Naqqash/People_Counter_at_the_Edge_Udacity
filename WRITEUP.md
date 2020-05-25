@@ -4,7 +4,7 @@ The people counter application will demonstrate how to create a smart video IoT 
 People counting applications can be used in a *retail store*, *supermarket*, *shopping malls*, *metro station*, *airport*. For example, Once a person is detected, We can follow the object through a shopping pipeline in a retail setting or track and collate behavior i.e. customer traffic patterns and time spent at merchandising location.
 
 ## Architecture Overview of the People Counter App
-![Architecture Overview of the People Counter App](/home/workspace/images/arch_diagram.png)
+![Architecture Overview of the People Counter App](./images/arch_diagram.png)
 
 
 ## Explaining Custom Layers
@@ -37,19 +37,19 @@ After reviewing the [paper](https://arxiv.org/pdf/1611.10012.pdf) and the [mediu
 
 - The most accurate single model use Faster R-CNN using Inception ResNet with 300 proposals. It runs at 1 second per image.
 
-![Paper_Models_Performance_Comparison](/home/workspace/images/googlepaper_models_comparison.png)
+![Paper_Models_Performance_Comparison](./images/googlepaper_models_comparison.png)
 
 - SSD with MobileNet provides the best accuracy tradeoff within the fastest detectors. SSD is fast but performs worse for small objects comparing with others.
 See picture below for comparison.
 
 - For large objects, SSD can outperform Faster R-CNN and R-FCN in accuracy with lighter and faster extractors.
 
-![Comparison_models_for_small_objects_detection](/home/workspace/images/Problems_SSD_detection.png)
+![Comparison_models_for_small_objects_detection](./images/Problems_SSD_detection.png)
 
 - SSD has the smallest memory size footprint among the commonly used models.
 
 
-![SSD_smallest_size_footprint](/home/workspace/images/models_size_comparison.png)
+![SSD_smallest_size_footprint](./images/models_size_comparison.png)
 
 
 
@@ -196,8 +196,8 @@ If working locally, to see the output on a web based interface, open the link [h
 
 ## Screenshots
 
-![Result1](/home/workspace/images/Result1.png)
-![Result1](/home/naqqash/Result2.png)
+![APP_Result](./images/Result1.png)
+![APP_Result](./images/Result2.png)
 
 
 
