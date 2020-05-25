@@ -73,29 +73,29 @@ The second approach here was to use the benchmark tool available in the tools se
 
   ### Model size (MB)
 
-|                   | Faster_RCNN_V2_Inception | SSD Mobilenet V2| SSDLite MobileNet V2| 
-| ----------------- | ---------------- | ---------------- | ---------------- |------------------------------|
-| Before Conversion | 174            |    210.7        | 62.5            | N/A                          |
-| After Conversion FP32  | 53.6          | 67.3          | 18.3            | 3.2                         |
-| After Conversion FP16 | 27        | 34         | 9.3 | 
+|                        | Faster_RCNN_V2_Inception | SSD Mobilenet V2| SSDLite MobileNet V2| 
+| -----------------      | ------------------------ | ----------------| ------------------- |
+| Before Conversion      | 174                      |    210.7        | 62.5                | 
+| After Conversion FP32  | 53.6                     | 67.3            | 18.3                | 
+| After Conversion FP16  | 27                       | 34              | 9.3                 | 
 
 
 
 ### Latency(ms)
 
-|                   | Faster_RCNN_V2_Inception | SSD Mobilenet V2| SSDLite MobileNet V2|
-| ----------------- | ---------------- | ---------------- | ---------------- |------------------------------|
-| Before Conversion | 174            |    210.7        | 62.5            | N/A                          |
-| After Conversion FP32  | 53.6          | 67.3          | 18.3            | 3.2                         |
-| After Conversion FP16 | 27        | 34         | 9.3 |
+|                       | Faster_RCNN_V2_Inception | SSD Mobilenet V2| SSDLite MobileNet V2|
+| -----------------     | ----------------         | ---------------- | ----------------   |
+| Before Conversion     | 174                      |    210.7         | 62.5               | 
+| After Conversion FP32 | 53.6                     | 67.3             | 18.3               | 
+| After Conversion FP16 | 27                       | 34               | 9.3                |
 
 ### Throughput (FPS)
 
-|                   | Faster_RCNN_V2_Inception | SSD Mobilenet V2| SSDLite MobileNet V2| 
-| ----------------- | ---------------- | ---------------- | ---------------- |------------------------------|
-| Before Conversion | 174            |    210.7        | 62.5            | N/A                          |
-| After Conversion FP32  | 53.6          | 67.3          | 18.3            | 3.2                         |
-| After Conversion FP16 | 27        | 34         | 9.3 | 
+|                        | Faster_RCNN_V2_Inception | SSD Mobilenet V2| SSDLite MobileNet V2| 
+| -----------------      | ----------------         | ----------------| ----------------    |
+| Before Conversion      | 174                      |    210.7        | 62.5                | 
+| After Conversion FP32  | 53.6                     | 67.3            | 18.3                | 
+| After Conversion FP16  | 27                       | 34              | 9.3                 | 
 
 
 <b> From the tables, one can conclude the best choice here is to use SSDLite MobileNet V2 model. Although, SSDLite is not the most accurate model but for this particular case we can achieve reasonable results using this model </b>.
